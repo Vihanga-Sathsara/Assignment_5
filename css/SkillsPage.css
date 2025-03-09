@@ -1,0 +1,126 @@
+#Skills {
+  margin: 0;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+#Skills h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+#skillsCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.SkillCard {
+  height: 290px;
+  width: 250px;
+  border: 2px solid #00bfff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden; 
+}
+
+.SkillCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.7);
+}
+
+.SkillCard img {
+  max-width: 80%; 
+  max-height: 80%; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.SkillCard:hover img {
+  transform: rotate(360deg);
+}
+
+
+@media screen and (max-width: 320px) {
+  .SkillCard {
+    width: 90vw;
+    height: 150px;
+  }
+
+  .SkillCard img {
+    max-width: 60px; 
+    max-height: 60px;
+  }
+}
+
+
+@media screen and (min-width:424px) and (max-width: 375px) {
+  .SkillCard {
+    width: 85vw;
+    height: 180px;
+  }
+
+  .SkillCard img {
+    max-width: 70px; 
+    max-height: 70px;
+  }
+}
+
+
+@media screen and (min-width:767px) and (max-width: 425px) {
+  .SkillCard {
+    width: 80vw;
+    height: 220px;
+  }
+
+  .SkillCard img {
+    max-width: 80px; 
+    max-height: 80px;
+  }
+}
+
+
+@media screen and(min-width:1023px) and (max-width: 768px) {
+  .SkillCard {
+    width: 45vw;
+    height: 290px;
+  }
+
+  .SkillCard img {
+    max-width: 120px; 
+    max-height: 120px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .SkillCard {
+    width: 30vw;
+    height: 290px;
+  }
+
+  .SkillCard img {
+    max-width: 150px; 
+    max-height: 150px;
+  }
+}
+
+
+@media screen and (min-width:1025px) and (max-width: 1440px) {
+  .SkillCard {
+    width: 25vw;
+    height: 290px;
+  }
+
+  .SkillCard img {
+    max-width: 180px; 
+    max-height: 180px;
+  }
+}

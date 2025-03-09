@@ -1,0 +1,125 @@
+body {
+    width: 100%; 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    background: #2a5298;
+}
+  
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding-right: 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    box-sizing: border-box; 
+    position: fixed;
+}
+  
+  header > #mainNavigation > ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header > #mainNavigation > ul > li > a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  header > #mainNavigation > ul > li > a:hover {
+    color: #00bfff;
+    border-bottom: 2px solid #00bfff;
+  }
+  
+  header > #btn-download {
+    padding: 8px 16px;
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  header #btn-download:hover {
+    background-color: #00bfff;
+  }
+  
+  #burger {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .menu-panel {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right 0.5s ease-in-out;
+    z-index: 1001;
+    box-sizing: border-box; 
+  }
+  
+  .menu-panel ul {
+    list-style: none;
+    padding: 50px 20px;
+  }
+  
+  .menu-panel ul li {
+    margin-bottom: 16px;
+  }
+  
+  .menu-panel ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 10px 20px; 
+    }
+  
+    #burger {
+      display: block; 
+    }
+  
+    #mainNavigation {
+      display: none;
+    }
+  
+    #btn-download {
+      display: none; 
+    }
+  
+    .menu-panel {
+      width: 80%; 
+    }
+  }

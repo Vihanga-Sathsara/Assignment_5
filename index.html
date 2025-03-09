@@ -3,132 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="/css/HomePage.css">
+    <link rel="stylesheet" href="/css/AboutPage.css">
+    <link rel="stylesheet" href="/css/ServicesPage.css">
+    <link rel="stylesheet" href="/css/SkillsPage.css">
+    <link rel="stylesheet" href="/css/ProjectsPage.css">
+    <link rel="stylesheet" href="/css/ContactPage.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-
     <header>
-        <nav>
+        <h2>Portfolio</h2>
+        <nav id="mainNavigation">
             <ul>
-                <li>Portfolio</li>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</li>
-                <li><a href="#Service">Service</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Service">Services</a></li>
                 <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><Button>Download CV</Button></li>
+                <li><a href="#Projectspage">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li> 
+                <li>  <Button id="btn-download">Download CV</Button></li>
+            </ul>
+          
+        </nav>
+       
+
+          <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+        <nav class="menu-panel" id="menu-panel-id">
+            <button class="close-btn" id="btn-close">&times;</button>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
    
-    <section id="Home">
-   
+<section id="Home">
+    <div id="homepage"> 
+            <p id="hello">Hello It’s Me</p>
+            <p id="name">Vihanga Sathsara</p>
+            <p id="who">And I’m a Web Developer</p>
 
-    <div id="PageBody">
-        
-          <h2> Hello It’s Me</h2>  
-          <h3> Vihanga Sathsara </h3>
-          <h3>And I’m a Web Developer</h3> 
-       
-        <p>
-            I use animation as a third dimension by which to simplify experiences and
-            kuiding thro each and every interaction. I’m not adding motion just to spruce
-            things up, but doing it in ways that.
-        </p>
-        <img src="/assets/images/home.png" alt="Home Page Image" style="height: 300px; width: 300px;">
-        <h3>Find Me</h3>
-        <img src="/assets/images/instagram.png" alt="" style="height: 40px; width: 40px;">
-        <img src="/assets/images/twitter.png" alt="" style="height: 40px; width: 40px;" >
-        <img src="/assets/images/linkedin.png" alt="" style="height: 40px; width: 40px;">
+            <div id="description">
+                <p>
+                    Transforming Ideas into Code, One Line at a Time.
+                </p>
+            </div>
+    
+          <p id="findme">Find Me</p>
+          <img src="/assets/images/instagram.png" alt="" class="social insta">
+          <img src="/assets/images/twitter.png" alt="" class="social twitter">
+          <img src="/assets/images/linkedin.png" alt="" class="social linkedin">
     </div>
+    <img src="/assets/images/home.png" alt="Home Page Image" id="homeimage">
 </section>
 
 <section id="About">
     <h1>About</h1>
-    <img src="/assets/images/dp.png" alt="" style="height: 300px; width: 300px;">
- <p>
-    I’m a motivated Software Engineering student at the Institute of Software Engineering (IJSE), currently in my second semester.
-    Passionate about learning new technologies and innovating solutions,I’m always eager to improve existing systems. I’m easy-going, positive, and
-    work well in teams, always striving to grow as a software engineer.
- </p>
-
+    <div id="aboutpage">
+        <img src="/assets/images/dp.png" alt="" id="profileimage">
+        <div id="profiledetail">
+            <p>
+                I’m a motivated Software Engineering student at the Institute of Software Engineering (IJSE), currently in my second semester.
+                Passionate about learning new technologies and innovating solutions,I’m always eager to improve existing systems. I’m easy-going, positive, and
+                work well in teams, always striving to grow as a software engineer.
+             </p>
+        </div>  
+    </div>
 </section>
 
 <section id="Service">
     <h1>Service</h1>
 
-    <img src="/assets/images/WebDevelopment.png" alt="" style="height: 100px; width: 100px;" >
-    <h2>Web Development</h2>
-    <p>Create user friendly web and manage</p>
-
-    <img src="/assets/images/system.png" alt="" style="height: 100px; width: 100px;" >
-    <h2>Management System</h2>
-    <p>Giving solution for manage company</p>
-
-    <img src="/assets/images/api.png" alt="" style="height: 100px; width: 100px;" >
-    <h2>API Development</h2>
-    <p>Manage API’s & Develop</p>
-
+    <div class="serviceCards">
+        <div class="ServiceCard">
+            <img src="/assets/images/WebDevelopment.png" alt="">
+            <h2>Web Development</h2>
+            <p>Create user friendly web and manage</p>
+        </div>
+        
+        <div class="ServiceCard">
+            <img src="/assets/images/system.png" alt="">
+            <h2>Management System</h2>
+            <p>Giving solution for manage company</p>
+        </div>
+        
+        <div class="ServiceCard">
+            <img src="/assets/images/api.png" alt="">
+            <h2>API Development</h2>
+            <p>Manage API’s & Develop</p>
+        </div>
+    </div>
+    
 </section>
 
 <Section id="Skills">
     <h1>Skills</h1>
-    <img src="/assets/images/java.png" alt=""  style="height: 150px; width: 150px;">
-    <img src="/assets/images/mysql.png" alt=""  style="height: 150px; width: 150px;">
-    <img src="/assets/images/html5.png" alt=""  style="height: 150px; width: 150px;">
-    <img src="/assets/images/css.png" alt=""  style="height: 150px; width: 150px;">
-    <img src="/assets/images/nodejs.png" alt=""  style="height: 150px; width: 150px;">
-    <img src="/assets/images/github.png" alt=""  style="height: 150px; width: 150px;">
-    <img src="/assets/images/c++.png" alt=""  style="height: 150px; width: 150px;">
-    <img src="/assets/images/csharp.png" alt="" style="height: 150px; width: 150px;">
-</Section>
 
-<section id="Projects">
-    <h1>Projects</h1>
-
-    <img src="/assets/images/tictactoe.jpg" alt="" style="height: 150px; width: 250px;">
-    <h4>Tic Tac Toe Game</h4>
-
-    <img src="/assets/images/managementSystem-java.png" alt="" style="height: 150px; width: 250px;">
-    <h4>Aquatic Plants Farm Management System</h4>
-
-</section>
-
-<section id="Contact">
+    <div id="skillsCards">
+        <div class="SkillCard">
+            <img src="/assets/images/java.png" alt="">
+        </div>
+        <div class="SkillCard">
+            <img src="/assets/images/mysql.png" alt="">
+        </div>
+        <div class="SkillCard">
+            <img src="/assets/images/html5.png" alt="">
+        </div>
+        <div class="SkillCard">
+            <img src="/assets/images/css.png" alt="">
+        </div>
+        <div class="SkillCard">
+            <img src="/assets/images/nodejs.png" alt="">
+        </div>
+        <div class="SkillCard">
+            <img src="/assets/images/github.png" alt="">
+        </div>
+        <div class="SkillCard">
+            <img src="/assets/images/c++.png" alt="">
+        </div>
+        <div class="SkillCard">
+            <img src="/assets/images/csharp.png" alt="">
+        </div>
+    </Section>
+   
+    <section id="Projectspage">
+        <h1>Projects</h1>
+    
+        <div id="projects">
+            <div class="project">
+                <img src="/assets/images/tictactoe.jpg" alt="" >
+                <h4>Tic Tac Toe Game</h4>
+            </div>
+            
+            <div class="project">
+                <img src="/assets/images/managementSystem-java.png" alt="">
+                <h4>Aquatic Plants Farm Management System</h4>
+            </div>
+        </div>
+        
+    </section>
+    
+<section id="ContactPage">
     <h1>Contact</h1>
-    <h2>Contact Me</h2>
-    <p>Email : sathsaravihanga27@gmail.com</p>
-    <p>Tel : 071 383 9368</p>
 
-    <input type="text" placeholder="Name" maxlength="25" />
-    <input type="text" placeholder="Email" maxlength="50"><br />
-    <textarea name="Message" id="Message" placeholder="Message" rows="10" cols="50"></textarea> <br />
-    <button onclick="alert('Message is send')">Send</button>
+    <div id="Contact">
+        <div id="Contactdetail">
+            <h2>Contact Me</h2>
+            <p>Email : sathsaravihanga27@gmail.com</p>
+            <p>Tel : 071 383 9368</p>
+        </div>
+        
+        <div id="message">
+            <div id="senderdetail">
+                <input type="text" placeholder="Name" maxlength="25" id="inputname"/>
+                <input type="text" placeholder="Email" maxlength="50" id="inputemail">
+            </div>
+            <textarea name="Message" placeholder="Message" id="messagearea"></textarea>
+            <button onclick="alert('Message is send')">Send</button>
+        </div>    
+    </div> 
 </section>
-</main>
+
 <footer>
     <p>Vihanga Sathsara</p>
     <nav>
         <ul>
             <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</li>
+            <li><a href="#About">About</a></li>
             <li><a href="#Service">Service</a></li>
             <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Projectspage">Projects</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
-    <img src="/assets/images/linkedin-black.png" alt="" style="height: 30px; width: 30px;">
-    <img src="/assets/images/instagram-black.png" alt="" style="height: 30px; width: 30px;">
-    <img src="/assets/images/twitter-black.png" alt="" style="height: 30px; width: 30px;">
-    <img src="/assets/images/github-black.png" alt="" style="height: 30px; width: 30px;">
-    <img src="/assets/images/facebook-black.png" alt="" style="height: 30px; width: 30px;">
-    <img src="/assets/images/whatsapp-black.png" alt="" style="height: 30px; width: 30px;">
+    
+    <img src="/assets/images/linkedin.png" alt="">
+    <img src="/assets/images/instagram.png" alt="">
+    <img src="/assets/images/twitter.png" alt="">
+    <img src="/assets/images/github.png" alt="">
+    <!-- <img src="/assets/images/" alt="">
+    <img src="/assets/images/" alt=""> -->
     <p>Copyright.© Vihanga Sathsara - All right reserved</p>
 
 </footer>
 
+<script>
+    const burger = document.getElementById("burger");
+    const menuPanel = document.getElementById("menu-panel-id");
+    const closeBtn = document.getElementById("btn-close");
+
+    burger.addEventListener("click", () => {
+      menuPanel.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menuPanel.classList.remove("active");
+    });
+  </script>
 </body>
 </html>

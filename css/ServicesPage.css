@@ -1,0 +1,186 @@
+#Service {
+  margin: 0;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+#Service h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+.serviceCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.ServiceCard {
+  width: 350px;
+  height: 350px;
+  border: 2px solid #00bfff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.ServiceCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.7);
+}
+
+.ServiceCard img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ServiceCard:hover img {
+  transform: rotate(360deg);
+}
+
+.ServiceCard h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.ServiceCard p {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+@media screen and (max-width: 320px) {
+  .ServiceCard {
+    width: 90vw;
+    height: 300px;
+  }
+
+  .ServiceCard img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .ServiceCard h2 {
+    font-size: 1.2rem;
+  }
+
+  .ServiceCard p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ServiceCard {
+    width: 85vw;
+    height: 320px;
+  }
+
+  .ServiceCard img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .ServiceCard h2 {
+    font-size: 1.3rem;
+  }
+
+  .ServiceCard p {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .ServiceCard {
+    width: 80vw;
+    height: 330px;
+  }
+
+  .ServiceCard img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .ServiceCard h2 {
+    font-size: 1.4rem;
+  }
+
+  .ServiceCard p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ServiceCard {
+    width: 45vw;
+    height: 350px;
+  }
+
+  .ServiceCard img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .ServiceCard h2 {
+    font-size: 1.5rem;
+  }
+
+  .ServiceCard p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ServiceCard {
+    width: 30vw;
+    height: 350px;
+  }
+
+  .ServiceCard img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .ServiceCard h2 {
+    font-size: 1.5rem;
+  }
+
+  .ServiceCard p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .ServiceCard {
+    width: 25vw;
+    height: 350px;
+  }
+
+  .ServiceCard img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .ServiceCard h2 {
+    font-size: 1.5rem;
+  }
+
+  .ServiceCard p {
+    font-size: 1rem;
+  }
+}

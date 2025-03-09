@@ -1,0 +1,155 @@
+#About {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+  }
+  
+  #About h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00bfff;
+  }
+  
+  #aboutpage {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+  }
+  
+  #profileimage {
+    height: 35vw;
+    width: 30vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #profileimage:hover {
+    transform: scale(1.05);
+  }
+  
+  #profiledetail {
+    border: 2px solid #00bfff;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  #profiledetail:hover {
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.7);
+  }
+  
+  #profiledetail p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  
+  @media screen and (max-width: 320px) {
+    #aboutpage {
+      flex-direction: column;
+    }
+  
+    #profileimage {
+      margin-bottom: 20px;
+    }
+  
+    #profiledetail {
+      width: 90vw;
+      padding: 15px;
+    }
+  
+    #profiledetail p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    #aboutpage {
+      flex-direction: column;
+    }
+  
+    #profileimage {
+      margin-bottom: 20px;
+    }
+  
+    #profiledetail {
+      width: 85vw;
+      padding: 15px;
+    }
+  
+    #profiledetail p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    #aboutpage {
+      flex-direction: column;
+    }
+  
+    #profileimage {
+      margin-bottom: 20px;
+    }
+  
+    #profiledetail {
+      width: 80vw;
+      padding: 15px;
+    }
+  
+    #profiledetail p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #aboutpage {
+      flex-direction: column;
+    }
+  
+    #profileimage {
+      margin-bottom: 20px;
+    }
+  
+    #profiledetail {
+      width: 70vw;
+      padding: 20px;
+    }
+  
+    #profiledetail p {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+  
+    #profiledetail {
+      width: 50vw;
+      padding: 20px;
+    }
+  
+    #profiledetail p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media screen and (max-width: 1440px) {
+  
+    #profiledetail {
+      width: 40vw;
+      padding: 20px;
+    }
+  
+    #profiledetail p {
+      font-size: 1.5rem;
+    }
+  }

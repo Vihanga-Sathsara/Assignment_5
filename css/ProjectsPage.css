@@ -1,0 +1,116 @@
+#Projectspage {
+  margin: 0;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+#Projectspage h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width:100%;
+}
+
+.project {
+  width: 350px;
+  border: 2px solid #00bfff;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.7);
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #00bfff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.project h4 {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+
+@media screen and (max-width: 320px) {
+  .project {
+    width: 90vw;
+  }
+
+  .project h4 {
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .project {
+    width: 85vw;
+  }
+
+  .project h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .project {
+    width: 80vw;
+  }
+
+  .project h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    width: 45vw;
+  }
+
+  .project h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project {
+    width: 30vw;
+  }
+
+  .project h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .project {
+    width: 25vw;
+  }
+
+  .project h4 {
+    font-size: 1.3rem;
+  }
+}

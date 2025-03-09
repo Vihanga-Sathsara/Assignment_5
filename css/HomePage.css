@@ -1,0 +1,192 @@
+#Home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 100px 5%;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+#hello {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#name {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#who {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 20px;
+}
+
+#description {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#findme {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social {
+  height: 40px;
+  width: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social:hover {
+  transform: scale(1.2);
+}
+
+#homeimage {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  z-index: 0;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #homeimage {
+    height: 450px;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #homepage {
+    max-width: 500px;
+  }
+
+  #hello {
+    font-size: 1.8rem;
+  }
+
+  #name {
+    font-size: 3.5rem;
+  }
+
+  #who {
+    font-size: 1.8rem;
+  }
+
+  #description {
+    font-size: 1.1rem;
+  }
+
+  #homeimage {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #homepage {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #homeimage {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  #hello {
+    font-size: 1.5rem;
+  }
+
+  #name {
+    font-size: 2.5rem;
+  }
+
+  #who {
+    font-size: 1.5rem;
+  }
+
+  #description {
+    font-size: 1rem;
+  }
+
+  #findme {
+    font-size: 1.2rem;
+  }
+
+  .social {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  #hello {
+    font-size: 1.4rem;
+  }
+
+  #name {
+    font-size: 2.2rem;
+  }
+
+  #who {
+    font-size: 1.4rem;
+  }
+
+  #description {
+    font-size: 0.9rem;
+  }
+
+  #findme {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #hello {
+    font-size: 1.3rem;
+  }
+
+  #name {
+    font-size: 2rem;
+  }
+
+  #who {
+    font-size: 1.3rem;
+  }
+
+  #description {
+    font-size: 0.8rem;
+  }
+
+  #findme {
+    font-size: 1rem;
+  }
+}
